@@ -1,6 +1,19 @@
 body {
-    background-color: $bgColor;
-    color: $color;
+    header {
+        @include box(pink);
+    }
+    nav {
+        @include box(lightblue);
+    }
+    main {
+        @include box(lightgreen);
+    }
+    aside {
+        @include box(rgb(248, 248, 101));
+    }
+    footer {
+        @include box(lightcoral);
+    }
 }
 
 h1 {
