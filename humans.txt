@@ -1,0 +1,20 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+    Creator:Benjamin Vernon
+    Site: http://creative.colorado.edu/~beve3854/
+    Github: https://github.com/xerrf
+    Twitter: xerrf
+    <name> -- <role> -- <twitter>
+
+# THANKS
+
+    Thanks to all my professors who taught me that I had to google it. 
+
+#SITE
+
+    Last Update: USA 02/19/19, The rest 19/02/19
+    Standards: HTML5, CSS3, JavaScript
+    Components: SASS, jQuery, Normalize.css
+    
