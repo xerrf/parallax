@@ -1,3 +1,5 @@
-#boilerplatter
+# Parallax Scrolling
 
-This is a custom boiler platter based with elements taken from the HTML5 boilerplate. The main addition with this platter is that is is SASS ready. This is meant to be used for me and was developed for a class. As time goes, I will be updating it. 
+I don't know if that is how you spell parallax. 
+
+I am learning how to create this scrolling effect by making some sort or narrative or something. This class that I am in is not very structured, which is both a good and bad thing. 
