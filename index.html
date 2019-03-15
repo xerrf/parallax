@@ -2,6 +2,15 @@
 <html class="no-js" lang="en">
 
 <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-136103688-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-136103688-1');
+    </script>
+
   <meta charset="utf-8">
   <title>P-P-Pa-Parallax!</title>
   <meta name="description" content="">
@@ -16,8 +25,6 @@
   <link rel="stylesheet" href="css/main.css">
 
   <meta name="theme-color" content="#fafafa">
-
-  <!-- Insert fonts from google ot typekit here -->
 </head>
 
 <body id="grid-wrapper">
@@ -26,16 +33,17 @@
   <![endif]-->
 
   <!-- Add your site or application content here -->
+  <div id="woman-container">
+    <section id="woman"></section>
+  </div>
     <div class="parallax">
-      <section class="parallax-layer top">
-        <h2 class="circle"></h2>
-      </section>
-      <section class="parallax-layer mid">
-        <h2 class="circle"></h2>
-      </section>
-      <section class="parallax-layer bottom">
-          <h2 class="circle"></h2>
-        </section>
+      <section id="moon" class="parallax-layer"></section>
+      <section id="spires-back" class="parallax-layer"></section>
+      <section id="spires-mid1" class="parallax-layer"></section>
+      <section id="spires-mid2" class="parallax-layer"></section>
+      <section id="spires-front" class="parallax-layer"></section>
+      <!-- <section class="parallax-layer bottom">
+        </section> -->
     </div>
 
   <!-- Add script tags for your site or application here -->
@@ -44,13 +52,6 @@
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
-
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
 </body>
 
 </html>
