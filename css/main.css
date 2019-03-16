@@ -543,7 +543,7 @@ body div.white .tunnel-container .hole1 {
   background-position: center;
   background-size: contain;
   height: 39px;
-  top: 0px;
+  top: -3px;
   z-index: 1;
 }
 body div.white .tunnel-container .tunnel {
@@ -552,7 +552,7 @@ body div.white .tunnel-container .tunnel {
   background-position: center;
   background-size: contain;
   height: 500px;
-  top: 19px;
+  top: 16px;
   z-index: 3;
 }
 body div.white .tunnel-container .hole2 {
@@ -561,7 +561,7 @@ body div.white .tunnel-container .hole2 {
   background-position: center;
   background-size: contain;
   height: 39px;
-  top: 500px;
+  top: 497px;
   z-index: 1;
 }
 body div.white .tunnel-container .tunnel-layer {
@@ -571,6 +571,7 @@ body div.white .tunnel-container .tunnel-layer {
 body .tunnel-inside {
   height: 2406px;
   position: relative;
+  overflow-y: hidden;
 }
 body .tunnel-inside #tunnel-front-right {
   background-image: url("../img/tunnel_front.png");
@@ -580,8 +581,6 @@ body .tunnel-inside #tunnel-front-right {
   transform: scaleX(-1);
   height: 2406px;
   width: 588px;
-  position: absolute;
-  top: 0px;
   right: 0px;
 }
 body .tunnel-inside #tunnel-front-left {
@@ -590,10 +589,146 @@ body .tunnel-inside #tunnel-front-left {
   background-position: center;
   background-size: contain;
   height: 2406px;
-  position: absolute;
   width: 588px;
-  top: 0px;
   left: 0px;
+}
+body .tunnel-inside #tunnel-mid2-right {
+  background-image: url("../img/tunnel_mid2.png");
+  background-repeat: repeat-y;
+  background-position: center;
+  background-size: contain;
+  transform: scaleX(-1);
+  width: 442px;
+  right: 0px;
+}
+body .tunnel-inside #tunnel-mid2-left {
+  background-image: url("../img/tunnel_mid2.png");
+  background-repeat: repeat-y;
+  background-position: center;
+  background-size: contain;
+  width: 442px;
+  left: 0px;
+}
+body .tunnel-inside #tunnel-mid1-right {
+  background-image: url("../img/tunnel_mid1.png");
+  background-repeat: repeat-y;
+  background-position: center;
+  background-size: contain;
+  transform: scaleX(-1);
+  width: 536px;
+  right: 0px;
+}
+body .tunnel-inside #tunnel-mid1-left {
+  background-image: url("../img/tunnel_mid1.png");
+  background-repeat: repeat-y;
+  background-position: center;
+  background-size: contain;
+  width: 536px;
+  left: 0px;
+}
+body .tunnel-inside #tunnel-back-right {
+  background-image: url("../img/tunnel_back.png");
+  background-repeat: repeat-y;
+  background-position: center;
+  background-size: contain;
+  transform: scaleX(-1);
+  width: 606px;
+  right: 0px;
+}
+body .tunnel-inside #tunnel-back-left {
+  background-image: url("../img/tunnel_back.png");
+  background-repeat: repeat-y;
+  background-position: center;
+  background-size: contain;
+  width: 606px;
+  left: 0px;
+}
+body .tunnel-inside .inside-tunnel {
+  height: 2406px;
+  position: absolute;
+  top: 0px;
+}
+body div#reverse-top #spires-front-bottom {
+  background-image: url("../img/spires_front.png");
+  background-repeat: repeat-x;
+  background-position: center;
+  background-size: contain;
+  transform: scaleY(-1);
+  background-size: cover;
+  height: 910px;
+  width: 100%;
+  top: 0px;
+  z-index: -1;
+}
+body div#reverse-top #stars-front-bottom {
+  background-image: url("../img/stars_front.png");
+  background-repeat: repeat-x;
+  background-position: center;
+  background-size: contain;
+  transform: scaleY(-1);
+  height: 1200px;
+  width: 100%;
+  top: 550px;
+  background-size: auto;
+  z-index: 3;
+}
+body div#reverse-top #stars-front-small-bottom {
+  background-image: url("../img/stars_front.png");
+  background-repeat: repeat-x;
+  background-position: center;
+  background-size: contain;
+  transform: scaleY(-1);
+  height: 1200px;
+  width: 100%;
+  top: 150px;
+  z-index: 3;
+}
+body div#reverse-top #spires-mid2-bottom {
+  background-image: url("../img/spires_mid2.png");
+  background-repeat: repeat-x;
+  background-position: center;
+  background-size: contain;
+  transform: scaleY(-1);
+  height: 1200px;
+  width: 100%;
+  top: 0px;
+  z-index: -1;
+}
+body div#reverse-top #spires-mid1-bottom {
+  background-image: url("../img/spires_mid1.png");
+  background-repeat: repeat-x;
+  background-position: center;
+  background-size: contain;
+  transform: scaleY(-1);
+  height: 1800px;
+  width: 100%;
+  top: 0px;
+  z-index: -1;
+}
+body div#reverse-top #spires-back-bottom {
+  background-image: url("../img/spires_back.png");
+  background-repeat: repeat-x;
+  background-position: center;
+  background-size: contain;
+  transform: scaleY(-1);
+  height: 1900px;
+  width: 100%;
+  top: 0px;
+  z-index: -1;
+}
+body div#reverse-top #moon-bottom {
+  background-image: url("../img/moon.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  left: 50%;
+  bottom: 0px;
+  transform: translateX(-50%) scaleY(-1);
+  padding: 10vh 0px;
+  z-index: 3;
 }
 
 /*
