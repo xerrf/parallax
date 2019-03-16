@@ -423,19 +423,14 @@ body {
   background-color: black;
 }
 body .parallax {
-  height: 100vh;
+  height: 2500px;
   overflow-x: hidden;
-  overflow-y: auto;
+  overflow-y: hidden;
   position: relative;
 }
 body .parallax-layer {
   position: absolute;
   top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 100vh 0;
-  /*add padding to force the scroll bars */
 }
 body .white {
   background-color: white;
@@ -456,7 +451,7 @@ body div#woman-container #woman {
   top: 200px;
   width: 100px;
   height: 100px;
-  z-index: 0;
+  z-index: 2;
 }
 body #moon {
   background-image: url("../img/moon.png");
@@ -469,13 +464,15 @@ body #moon {
   left: 50%;
   transform: translateX(-50%);
   padding: 10vh 0px;
-  z-index: 1;
+  z-index: 3;
 }
 body #spires-back {
   background-image: url("../img/spires_back.png");
   background-repeat: repeat-x;
   background-position: center;
   background-size: contain;
+  height: 1900px;
+  width: 100%;
   top: 600px;
   z-index: -1;
 }
@@ -484,6 +481,8 @@ body #spires-mid1 {
   background-repeat: repeat-x;
   background-position: center;
   background-size: contain;
+  height: 1800px;
+  width: 100%;
   top: 700px;
   z-index: -1;
 }
@@ -492,7 +491,9 @@ body #spires-mid2 {
   background-repeat: repeat-x;
   background-position: center;
   background-size: contain;
-  top: 1100px;
+  height: 1200px;
+  width: 100%;
+  top: 1350px;
   z-index: -1;
 }
 body #spires-front {
@@ -501,7 +502,9 @@ body #spires-front {
   background-position: center;
   background-size: contain;
   background-size: cover;
-  top: 1100px;
+  height: 910px;
+  width: 100%;
+  top: 1600px;
   z-index: -1;
 }
 body #stars-front-small {
@@ -509,51 +512,88 @@ body #stars-front-small {
   background-repeat: repeat-x;
   background-position: center;
   background-size: contain;
+  height: 1200px;
+  width: 100%;
   top: 400px;
-  z-index: 1;
+  z-index: 3;
 }
 body #stars-front-small {
   background-image: url("../img/stars_front.png");
   background-repeat: repeat-x;
   background-position: center;
   background-size: contain;
+  height: 1200px;
+  width: 100%;
   top: 600px;
   background-size: auto;
-  z-index: 1;
+  z-index: 3;
 }
 body div.white {
-  height: 950px;
+  height: 518px;
 }
 body div.white .tunnel-container {
   width: 200px;
-  height: 50vh;
+  height: 578;
   position: relative;
   margin: 0px auto;
 }
-body div.white .tunnel-container #hole1 {
+body div.white .tunnel-container .hole1 {
   background-image: url("../img/hole.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  position: relative;
+  height: 39px;
   top: 0px;
+  z-index: 1;
 }
-body div.white .tunnel-container #tunnel {
+body div.white .tunnel-container .tunnel {
   background-image: url("../img/tunnel.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  top: 0px;
+  height: 500px;
+  top: 19px;
+  z-index: 3;
 }
-body div.white .tunnel-container #hole2 {
+body div.white .tunnel-container .hole2 {
   background-image: url("../img/hole.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  bottom: 0px;
+  height: 39px;
+  top: 500px;
+  z-index: 1;
 }
-body div.white .tunnel-container .fixed-layer {
+body div.white .tunnel-container .tunnel-layer {
+  position: absolute;
+  width: 200px;
+}
+body .tunnel-inside {
+  height: 2406px;
   position: relative;
+}
+body .tunnel-inside #tunnel-front-right {
+  background-image: url("../img/tunnel_front.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  transform: scaleX(-1);
+  height: 2406px;
+  width: 588px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+body .tunnel-inside #tunnel-front-left {
+  background-image: url("../img/tunnel_front.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 2406px;
+  position: absolute;
+  width: 588px;
+  top: 0px;
+  left: 0px;
 }
 
 /*

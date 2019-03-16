@@ -2,19 +2,19 @@ body {
     // background: lightyellow;
     background-color: black;
     .parallax {
-        height: 100vh;
+        height: 2500px;
         overflow-x: hidden;
-        overflow-y: auto;
+        overflow-y: hidden;
         position: relative;
     }
     
     .parallax-layer {
         position: absolute;
         top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        padding: 100vh 0;   /*add padding to force the scroll bars */
+        // right: 0;
+        // bottom: 0;
+        // left: 0;
+        // padding: 100vh 0;   /*add padding to force the scroll bars */
     }
 
     .white {
@@ -33,7 +33,7 @@ body {
             top: 200px;
             width: 100px;
             height: 100px;
-            z-index: 0;
+            z-index: 2;
         }
     }
     
@@ -47,43 +47,40 @@ body {
         left: 50%;
         transform: translateX(-50%);
         padding: 10vh 0px;
-        z-index: 1;
+        z-index: 3;
     }
     
     
     #spires-back {
         @include imageXRepeat("../img/spires_back.png");
+        height: 1900px;
+        width: 100%;
         top: 600px;
         z-index: -1;
-        
-        // transform: translateZ(-2px) scale(2);
-        // transform: scaleX(-1);
-        // background-color: pink;
-        // opacity: 0.24;
     }
     
     #spires-mid1 {
         @include imageXRepeat("../img/spires_mid1.png");
+        height: 1800px;
+        width: 100%;
         top: 700px;
         z-index: -1;
-        // transform: translateZ(-5px) scale(2);
-        // background-color: pink;
-        // opacity: 0.24;
     }
     
     #spires-mid2 {
         @include imageXRepeat("../img/spires_mid2.png");
-            top: 1100px;
+        height: 1200px;
+        width: 100%;
+        top: 1350px;
         z-index: -1;
-        // transform: translateZ(0px);
-        // background-color: pink;
-        // opacity: 0.24;
     }
     
     #spires-front {
         @include imageXRepeat("../img/spires_front.png");
         background-size: cover;
-        top: 1100px;
+        height: 910px;
+        width: 100%;
+        top: 1600px;
         z-index: -1;
         // background-color: pink;
         // opacity: 0.24;
@@ -91,42 +88,74 @@ body {
     
     #stars-front-small {
         @include imageXRepeat("../img/stars_front.png");
+        height: 1200px;
+        width: 100%;
         top: 400px;
-        z-index: 1;
+        z-index: 3;
     }
     
     #stars-front-small {
         @include imageXRepeat("../img/stars_front.png");
+        height: 1200px;
+        width: 100%;
         top: 600px;
         background-size: auto;
-        z-index: 1;
+        z-index: 3;
     }
 
     div.white {
-        height: 950px;
+        height: 518px;
         .tunnel-container {
             width: 200px;
-            height: 50vh;
+            height: 578;
             position: relative;
             margin: 0px auto;
-            #hole1 {
+            .hole1 {
                 @include imageNoRepeat("../img/hole.png");
-                position: relative;
+                height: 39px;
                 top: 0px;
+                z-index: 1;
             }
-            #tunnel {
+            .tunnel {
                 @include imageNoRepeat("../img/tunnel.png");
-                top: 0px;
+                height: 500px;
+                // background-color: pink;
+                top: 19px;
+                z-index: 3;
             }
-            #hole2 {
+            .hole2 {
                 @include imageNoRepeat("../img/hole.png");
-                bottom: 0px;
+                height: 39px;
+                top: 500px;
+                z-index: 1;
             }
-            .fixed-layer {
-                position: relative;
+            .tunnel-layer {
+                position: absolute;
+                width: 200px;
             }
         }
        
+    }
+    .tunnel-inside {
+        height: 2406px;
+        position: relative;
+        #tunnel-front-right {
+            @include imageNoRepeat("../img/tunnel_front.png");
+            transform: scaleX(-1);
+            height: 2406px;
+            width: 588px;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+        }
+        #tunnel-front-left {
+            @include imageNoRepeat("../img/tunnel_front.png");
+            height: 2406px;
+            position: absolute;
+            width: 588px;
+            top: 0px;
+            left: 0px;
+        }
     }
 
    

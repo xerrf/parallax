@@ -15,3 +15,10 @@
     background-position: center;
     background-size: contain;
 }
+
+@mixin imageYRepeat($path) {
+    background-image: url($path);
+    background-repeat: repeat-y;
+    background-position: center;
+    background-size: contain;
+}
