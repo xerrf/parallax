@@ -1,91 +1,138 @@
 body {
     // background: lightyellow;
     background-color: black;
-}
-
-.parallax {
-    perspective: 10px;   /**/
-    height: 100vh;      /**/
-    overflow-x: hidden;
-    overflow-y: auto;
-    position: relative;
-}
-
-.parallax-layer {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    padding: 100vh 0;   /*add padding to force the scroll bars */
-}
-
-div#woman-container {
-    width: 100px;
-    margin: 0px auto;
-    overflow-y: hidden;
-    #woman {
-        position: fixed;
-        @include imageNoRepeat("../img/Falling.png");
-        background-position: center top;
-        display: block;
-        top: 200px;
-        width: 100px;
-        height: 100px;
-        z-index: -1;
+    .parallax {
+        height: 100vh;
+        overflow-x: hidden;
+        overflow-y: auto;
+        position: relative;
     }
+    
+    .parallax-layer {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        padding: 100vh 0;   /*add padding to force the scroll bars */
+    }
+
+    .white {
+        background-color: white;
+    }
+    
+    div#woman-container {
+        width: 100px;
+        margin: 0px auto;
+        overflow-y: hidden;
+        #woman {
+            position: fixed;
+            @include imageNoRepeat("../img/Falling.png");
+            background-position: center top;
+            display: block;
+            top: 200px;
+            width: 100px;
+            height: 100px;
+            z-index: 0;
+        }
+    }
+    
+    #moon {
+        // transform: translateZ(0px);  /*this controls the element's depth*/
+        @include imageNoRepeat("../img/moon.png");
+        // background-color: pink;
+        width: 400px;
+        height: 400px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 10vh 0px;
+        z-index: 1;
+    }
+    
+    
+    #spires-back {
+        @include imageXRepeat("../img/spires_back.png");
+        top: 600px;
+        z-index: -1;
+        
+        // transform: translateZ(-2px) scale(2);
+        // transform: scaleX(-1);
+        // background-color: pink;
+        // opacity: 0.24;
+    }
+    
+    #spires-mid1 {
+        @include imageXRepeat("../img/spires_mid1.png");
+        top: 700px;
+        z-index: -1;
+        // transform: translateZ(-5px) scale(2);
+        // background-color: pink;
+        // opacity: 0.24;
+    }
+    
+    #spires-mid2 {
+        @include imageXRepeat("../img/spires_mid2.png");
+            top: 1100px;
+        z-index: -1;
+        // transform: translateZ(0px);
+        // background-color: pink;
+        // opacity: 0.24;
+    }
+    
+    #spires-front {
+        @include imageXRepeat("../img/spires_front.png");
+        background-size: cover;
+        top: 1100px;
+        z-index: -1;
+        // background-color: pink;
+        // opacity: 0.24;
+    }
+    
+    #stars-front-small {
+        @include imageXRepeat("../img/stars_front.png");
+        top: 400px;
+        z-index: 1;
+    }
+    
+    #stars-front-small {
+        @include imageXRepeat("../img/stars_front.png");
+        top: 600px;
+        background-size: auto;
+        z-index: 1;
+    }
+
+    div.white {
+        height: 950px;
+        .tunnel-container {
+            width: 200px;
+            height: 50vh;
+            position: relative;
+            margin: 0px auto;
+            #hole1 {
+                @include imageNoRepeat("../img/hole.png");
+                position: relative;
+                top: 0px;
+            }
+            #tunnel {
+                @include imageNoRepeat("../img/tunnel.png");
+                top: 0px;
+            }
+            #hole2 {
+                @include imageNoRepeat("../img/hole.png");
+                bottom: 0px;
+            }
+            .fixed-layer {
+                position: relative;
+            }
+        }
+       
+    }
+
+   
+
 }
 
-#moon {
-    // transform: translateZ(0px);  /*this controls the element's depth*/
-    @include imageNoRepeat("../img/moon.png");
-    // background-color: pink;
-    width: 400px;
-    height: 400px;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 10vh 0px;
-}
 
 
-// #spires-back {
-//     @include imageXRepeat("../img/spires_back.png");
-//     transform: translateZ(-2px) scale(2);
-//     transform: scaleX(-1);
-//     background-color: pink;
-//     opacity: 0.24;
-// }
-
-// #spires-mid1 {
-//     @include imageXRepeat("../img/spires_mid1.png");
-//     transform: translateZ(-5px) scale(2);
-//     background-color: pink;
-//     opacity: 0.24;
-// }
-
-// #spires-mid2 {
-//     @include imageXRepeat("../img/spires_mid2.png");
-//     transform: translateZ(0px);
-//     background-color: pink;
-//     opacity: 0.24;
-// }
-
-// .bottom {
-//     // transform: translateZ(-1px);  /*this controls the element's depth*/
-//     transform: translateZ(-2px) scale(3);
-//     background-image: url(../img/bottom.png);
-//     background-repeat: no-repeat;
-//     background-position: center;
-//     background-size: contain;
-//     // h2 {
-//     //     background-color: red;
-//     //     opacity: 0.9;
-//     // }
-// }
-// .circle {
-//     width: 100px;
-//     height: 100px;
-//     border-radius: 50px;
-// }
 
