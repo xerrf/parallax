@@ -133,7 +133,7 @@ body {
             .hole2 {
                 @include imageNoRepeat("../img/hole.png");
                 height: 39px;
-                top: 497px;
+                top: 495px;
                 z-index: 1;
             }
             .tunnel-layer {
@@ -146,60 +146,67 @@ body {
     .tunnel-inside {
         height: 2406px;
         position: relative;
+        overflow-x: hidden;
         overflow-y: hidden;
         #tunnel-front-right {
-            @include imageNoRepeat("../img/tunnel_front.png");
+            @include imageYRepeat("../img/tunnel_front.png");
             transform: scaleX(-1);
             height: 2406px;
             width: 588px;
-            // top: 0px;
-            right: 0px;
+            // left: 600px;
+            // background-color: pink;
         }
         #tunnel-front-left {
-            @include imageNoRepeat("../img/tunnel_front.png");
+            @include imageYRepeat("../img/tunnel_front.png");
             height: 2406px;
             width: 588px;
-            // top: 0px;
-            left: 0px;
+            // left: 0px;
         }
         #tunnel-mid2-right {
             @include imageYRepeat("../img/tunnel_mid2.png");
             transform: scaleX(-1);
             width: 442px;
+            height: 5000px;
             right: 0px;
         }
         #tunnel-mid2-left {
             @include imageYRepeat("../img/tunnel_mid2.png");
             width: 442px;
+            height: 5000px;
             left: 0px;
         }
         #tunnel-mid1-right {
             @include imageYRepeat("../img/tunnel_mid1.png");
             transform: scaleX(-1);
+            height: 4000px;
             width: 536px;
             right: 0px;
+            top: -1000px;
         }
         #tunnel-mid1-left {
             @include imageYRepeat("../img/tunnel_mid1.png");
             width: 536px;
+            height: 4000px;
             left: 0px;
+            top: -1000px;
         }
         #tunnel-back-right {
             @include imageYRepeat("../img/tunnel_back.png");
             transform: scaleX(-1);
             width: 606px;
+            height: 4000px;
             right: 0px;
         }
         #tunnel-back-left {
             @include imageYRepeat("../img/tunnel_back.png");
             width: 606px;
+            height: 4000px;
             left: 0px;
         }
         .inside-tunnel {
             height: 2406px;
             position: absolute;
             top: 0px;
-
         }
     }
     div#reverse-top {

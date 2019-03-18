@@ -568,7 +568,7 @@ body div.white .tunnel-container .hole2 {
   background-position: center;
   background-size: contain;
   height: 39px;
-  top: 497px;
+  top: 495px;
   z-index: 1;
 }
 body div.white .tunnel-container .tunnel-layer {
@@ -578,26 +578,25 @@ body div.white .tunnel-container .tunnel-layer {
 body .tunnel-inside {
   height: 2406px;
   position: relative;
+  overflow-x: hidden;
   overflow-y: hidden;
 }
 body .tunnel-inside #tunnel-front-right {
   background-image: url("../img/tunnel_front.png");
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
   background-position: center;
   background-size: contain;
   transform: scaleX(-1);
   height: 2406px;
   width: 588px;
-  right: 0px;
 }
 body .tunnel-inside #tunnel-front-left {
   background-image: url("../img/tunnel_front.png");
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
   background-position: center;
   background-size: contain;
   height: 2406px;
   width: 588px;
-  left: 0px;
 }
 body .tunnel-inside #tunnel-mid2-right {
   background-image: url("../img/tunnel_mid2.png");
@@ -606,6 +605,7 @@ body .tunnel-inside #tunnel-mid2-right {
   background-size: contain;
   transform: scaleX(-1);
   width: 442px;
+  height: 5000px;
   right: 0px;
 }
 body .tunnel-inside #tunnel-mid2-left {
@@ -614,6 +614,7 @@ body .tunnel-inside #tunnel-mid2-left {
   background-position: center;
   background-size: contain;
   width: 442px;
+  height: 5000px;
   left: 0px;
 }
 body .tunnel-inside #tunnel-mid1-right {
@@ -622,8 +623,10 @@ body .tunnel-inside #tunnel-mid1-right {
   background-position: center;
   background-size: contain;
   transform: scaleX(-1);
+  height: 4000px;
   width: 536px;
   right: 0px;
+  top: -1000px;
 }
 body .tunnel-inside #tunnel-mid1-left {
   background-image: url("../img/tunnel_mid1.png");
@@ -631,7 +634,9 @@ body .tunnel-inside #tunnel-mid1-left {
   background-position: center;
   background-size: contain;
   width: 536px;
+  height: 4000px;
   left: 0px;
+  top: -1000px;
 }
 body .tunnel-inside #tunnel-back-right {
   background-image: url("../img/tunnel_back.png");
@@ -640,6 +645,7 @@ body .tunnel-inside #tunnel-back-right {
   background-size: contain;
   transform: scaleX(-1);
   width: 606px;
+  height: 4000px;
   right: 0px;
 }
 body .tunnel-inside #tunnel-back-left {
@@ -648,6 +654,7 @@ body .tunnel-inside #tunnel-back-left {
   background-position: center;
   background-size: contain;
   width: 606px;
+  height: 4000px;
   left: 0px;
 }
 body .tunnel-inside .inside-tunnel {
