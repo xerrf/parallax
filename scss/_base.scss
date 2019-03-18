@@ -2,7 +2,7 @@ body {
     // background: lightyellow;
     background-color: black;
     .parallax {
-        height: 2500px;
+        height: 1800px;
         overflow-x: hidden;
         overflow-y: hidden;
         position: relative;
@@ -55,7 +55,7 @@ body {
         @include imageXRepeat("../img/spires_back.png");
         height: 1900px;
         width: 100%;
-        top: 600px;
+        top: 750px;
         z-index: -1;
     }
     
@@ -63,7 +63,7 @@ body {
         @include imageXRepeat("../img/spires_mid1.png");
         height: 1800px;
         width: 100%;
-        top: 700px;
+        top: 1000px;
         z-index: -1;
     }
     
@@ -71,16 +71,16 @@ body {
         @include imageXRepeat("../img/spires_mid2.png");
         height: 1200px;
         width: 100%;
-        top: 1350px;
+        top: 2000px;
         z-index: -1;
     }
     
     #spires-front {
         @include imageXRepeat("../img/spires_front.png");
         background-size: cover;
-        height: 910px;
+        height: 2000px;
         width: 100%;
-        top: 1600px;
+        top: 5800px;
         z-index: -1;
         // background-color: pink;
         // opacity: 0.24;
@@ -101,6 +101,13 @@ body {
         top: 600px;
         background-size: auto;
         z-index: 3;
+    }
+    #extra-white {
+        background-color: white;
+        height: 0px;
+        width: 100%;
+        position: absolute;
+        bottom: 0px;
     }
 
     div.white {
@@ -210,7 +217,7 @@ body {
             transform: scaleY(-1);
             height: 1200px;
             width: 100%;
-            top: 550px;
+            top: 0px;
             background-size: auto;
             z-index: 3;
         }
