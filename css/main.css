@@ -662,6 +662,9 @@ body .tunnel-inside .inside-tunnel {
   position: absolute;
   top: 0px;
 }
+body div#second-tunnel .tunnel-container {
+  top: -15px;
+}
 body div#reverse-top #spires-front-bottom {
   background-image: url("../img/spires_front.png");
   background-repeat: repeat-x;

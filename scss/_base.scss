@@ -112,17 +112,20 @@ body {
 
     div.white {
         height: 518px;
+
         .tunnel-container {
             width: 200px;
             height: 578;
             position: relative;
             margin: 0px auto;
+
             .hole1 {
                 @include imageNoRepeat("../img/hole.png");
                 height: 39px;
                 top: -3px;
                 z-index: 1;
             }
+
             .tunnel {
                 @include imageNoRepeat("../img/tunnel.png");
                 height: 500px;
@@ -130,38 +133,40 @@ body {
                 top: 16px;
                 z-index: 3;
             }
+
             .hole2 {
                 @include imageNoRepeat("../img/hole.png");
                 height: 39px;
                 top: 495px;
                 z-index: 1;
             }
+
             .tunnel-layer {
                 position: absolute;
                 width: 200px;
             }
-        }
-       
+        } 
     }
+
     .tunnel-inside {
         height: 2406px;
         position: relative;
         overflow-x: hidden;
         overflow-y: hidden;
+
         #tunnel-front-right {
             @include imageYRepeat("../img/tunnel_front.png");
             transform: scaleX(-1);
             height: 2406px;
             width: 588px;
-            // left: 600px;
-            // background-color: pink;
         }
+
         #tunnel-front-left {
             @include imageYRepeat("../img/tunnel_front.png");
             height: 2406px;
             width: 588px;
-            // left: 0px;
         }
+
         #tunnel-mid2-right {
             @include imageYRepeat("../img/tunnel_mid2.png");
             transform: scaleX(-1);
@@ -169,12 +174,14 @@ body {
             height: 5000px;
             right: 0px;
         }
+
         #tunnel-mid2-left {
             @include imageYRepeat("../img/tunnel_mid2.png");
             width: 442px;
             height: 5000px;
             left: 0px;
         }
+
         #tunnel-mid1-right {
             @include imageYRepeat("../img/tunnel_mid1.png");
             transform: scaleX(-1);
@@ -183,6 +190,7 @@ body {
             right: 0px;
             top: -1000px;
         }
+
         #tunnel-mid1-left {
             @include imageYRepeat("../img/tunnel_mid1.png");
             width: 536px;
@@ -190,6 +198,7 @@ body {
             left: 0px;
             top: -1000px;
         }
+
         #tunnel-back-right {
             @include imageYRepeat("../img/tunnel_back.png");
             transform: scaleX(-1);
@@ -197,18 +206,27 @@ body {
             height: 4000px;
             right: 0px;
         }
+
         #tunnel-back-left {
             @include imageYRepeat("../img/tunnel_back.png");
             width: 606px;
             height: 4000px;
             left: 0px;
         }
+
         .inside-tunnel {
             height: 2406px;
             position: absolute;
             top: 0px;
         }
     }
+
+    div#second-tunnel {
+        .tunnel-container {
+            top: -15px;
+        }
+    }
+
     div#reverse-top {
         #spires-front-bottom {
             @include imageXRepeat("../img/spires_front.png");
@@ -219,6 +237,7 @@ body {
             top: 0px;
             z-index: -1;
         }
+
         #stars-front-bottom {
             @include imageXRepeat("../img/stars_front.png");
             transform: scaleY(-1);
@@ -228,6 +247,7 @@ body {
             background-size: auto;
             z-index: 3;
         }
+
         #stars-front-small-bottom {
             @include imageXRepeat("../img/stars_front.png");
             transform: scaleY(-1);
@@ -235,8 +255,8 @@ body {
             width: 100%;
             top: 150px;
             z-index: 3;
-
         }
+
         #spires-mid2-bottom {
             @include imageXRepeat("../img/spires_mid2.png");
             transform: scaleY(-1);
@@ -245,6 +265,7 @@ body {
             top: 0px;
             z-index: -1;
         }
+
         #spires-mid1-bottom {
             @include imageXRepeat("../img/spires_mid1.png");
             transform: scaleY(-1);
@@ -253,6 +274,7 @@ body {
             top: 0px;
             z-index: -1;
         }
+
         #spires-back-bottom {
             @include imageXRepeat("../img/spires_back.png");
             transform: scaleY(-1);
@@ -261,6 +283,7 @@ body {
             top: 0px;
             z-index: -1;
         }
+
         #moon-bottom {
             @include imageNoRepeat("../img/moon.png");
             width: 400px;
@@ -273,8 +296,6 @@ body {
             z-index: 3;
         }
     }
- 
-
 }
 
 
