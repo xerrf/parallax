@@ -11,10 +11,6 @@ body {
     .parallax-layer {
         position: absolute;
         top: 0;
-        // right: 0;
-        // bottom: 0;
-        // left: 0;
-        // padding: 100vh 0;   /*add padding to force the scroll bars */
     }
 
     .white {
@@ -50,7 +46,6 @@ body {
         z-index: 3;
     }
     
-    
     #spires-back {
         @include imageXRepeat("../img/spires_back.png");
         height: 1900px;
@@ -82,19 +77,17 @@ body {
         width: 100%;
         top: 5800px;
         z-index: -1;
-        // background-color: pink;
-        // opacity: 0.24;
     }
     
     #stars-front-small {
         @include imageXRepeat("../img/stars_front.png");
         height: 1200px;
         width: 100%;
-        top: 400px;
+        top: 600px;
         z-index: 3;
     }
     
-    #stars-front-small {
+    #stars-front {
         @include imageXRepeat("../img/stars_front.png");
         height: 1200px;
         width: 100%;
@@ -228,13 +221,19 @@ body {
     }
 
     div#reverse-top {
+        position: relative;
+
+        .abs {
+            position: absolute;
+        }
+
         #spires-front-bottom {
             @include imageXRepeat("../img/spires_front.png");
             transform: scaleY(-1);
             background-size: cover;
-            height: 910px;
+            height: 1800px;
             width: 100%;
-            top: 0px;
+            top: 6700px;
             z-index: -1;
         }
 
@@ -253,7 +252,7 @@ body {
             transform: scaleY(-1);
             height: 1200px;
             width: 100%;
-            top: 150px;
+            top: 3900px;
             z-index: 3;
         }
 
@@ -262,7 +261,7 @@ body {
             transform: scaleY(-1);
             height: 1200px;
             width: 100%;
-            top: 0px;
+            top: 2600px;
             z-index: -1;
         }
 
@@ -271,7 +270,7 @@ body {
             transform: scaleY(-1);
             height: 1800px;
             width: 100%;
-            top: 0px;
+            top: 1450px;
             z-index: -1;
         }
 
@@ -280,7 +279,7 @@ body {
             transform: scaleY(-1);
             height: 1900px;
             width: 100%;
-            top: 0px;
+            top: 500px;
             z-index: -1;
         }
 

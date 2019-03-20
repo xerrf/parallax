@@ -46,24 +46,44 @@ $(document).ready( function() {
         });
 
         // this handles the parallax in the tunnel
-        if (wScroll > 2000 && wScroll <=5000)
-        $("#tunnel-back-right").css( {
-            "transform" : "translate(0px, -" + wScroll/8 + "px) scale(-1)"
-        });
-        $("#tunnel-back-left").css( {
-            "transform" : "translate(0px, -" + wScroll/8 + "px)"
-        });
-        $("#tunnel-mid1-right").css( {
-            "transform" : "translate(0px, " + wScroll/3 + "px) scale(-1)"
-        });
-        $("#tunnel-mid1-left").css( {
-            "transform" : "translate(0px, " + wScroll/3 + "px)"
-        });
-        $("#tunnel-mid2-right").css( {
-            "transform" : "translate(0px, -" + wScroll/2 + "px) scale(-1)"
-        });
-        $("#tunnel-mid2-left").css( {
-            "transform" : "translate(0px, -" + wScroll/2 + "px)"
-        });
+        if (wScroll > 2000 && wScroll <=5000) {
+            $("#tunnel-back-right").css( {
+                "transform" : "translate(0px, -" + wScroll/8 + "px) scale(-1)"
+            });
+            $("#tunnel-back-left").css( {
+                "transform" : "translate(0px, -" + wScroll/8 + "px)"
+            });
+            $("#tunnel-mid1-right").css( {
+                "transform" : "translate(0px, " + wScroll/3 + "px) scale(-1)"
+            });
+            $("#tunnel-mid1-left").css( {
+                "transform" : "translate(0px, " + wScroll/3 + "px)"
+            });
+            $("#tunnel-mid2-right").css( {
+                "transform" : "translate(0px, -" + wScroll/2 + "px) scale(-1)"
+            });
+            $("#tunnel-mid2-left").css( {
+                "transform" : "translate(0px, -" + wScroll/2 + "px)"
+            });
+          }   
+        
+        // this will hand the reverse spires section
+        if (wScroll > 5000 && wScroll <= 6500) {
+            $("#spires-front-bottom").css( {
+                "transform" : "translate(0px, -" + wScroll/12 + "%) scaleY(-1)"
+            });
+            $("#spires-mid2-bottom").css( {
+                "transform" : "translate(0px, -" + wScroll/21 + "%) scaleY(-1)"
+            });
+            $("#spires-mid1-bottom").css( {
+                "transform" : "translate(0px, -" + wScroll/50 + "%) scaleY(-1)"
+            });
+            $("#spires-back-bottom").css( {
+                "transform" : "translate(0px, -" + wScroll/100 + "%) scaleY(-1)"
+            });
+            $("#stars-front-small-bottom").css( { 
+                "transform" : "translate(0px, -" + wScroll/16 + "%) scaleY(-1)"
+            })
+        }
     });
 });

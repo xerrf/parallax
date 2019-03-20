@@ -514,10 +514,10 @@ body #stars-front-small {
   background-size: contain;
   height: 1200px;
   width: 100%;
-  top: 400px;
+  top: 600px;
   z-index: 3;
 }
-body #stars-front-small {
+body #stars-front {
   background-image: url("../img/stars_front.png");
   background-repeat: repeat-x;
   background-position: center;
@@ -665,6 +665,12 @@ body .tunnel-inside .inside-tunnel {
 body div#second-tunnel .tunnel-container {
   top: -15px;
 }
+body div#reverse-top {
+  position: relative;
+}
+body div#reverse-top .abs {
+  position: absolute;
+}
 body div#reverse-top #spires-front-bottom {
   background-image: url("../img/spires_front.png");
   background-repeat: repeat-x;
@@ -672,9 +678,9 @@ body div#reverse-top #spires-front-bottom {
   background-size: contain;
   transform: scaleY(-1);
   background-size: cover;
-  height: 910px;
+  height: 1800px;
   width: 100%;
-  top: 0px;
+  top: 6700px;
   z-index: -1;
 }
 body div#reverse-top #stars-front-bottom {
@@ -697,7 +703,7 @@ body div#reverse-top #stars-front-small-bottom {
   transform: scaleY(-1);
   height: 1200px;
   width: 100%;
-  top: 150px;
+  top: 3900px;
   z-index: 3;
 }
 body div#reverse-top #spires-mid2-bottom {
@@ -708,7 +714,7 @@ body div#reverse-top #spires-mid2-bottom {
   transform: scaleY(-1);
   height: 1200px;
   width: 100%;
-  top: 0px;
+  top: 2600px;
   z-index: -1;
 }
 body div#reverse-top #spires-mid1-bottom {
@@ -719,7 +725,7 @@ body div#reverse-top #spires-mid1-bottom {
   transform: scaleY(-1);
   height: 1800px;
   width: 100%;
-  top: 0px;
+  top: 1450px;
   z-index: -1;
 }
 body div#reverse-top #spires-back-bottom {
@@ -730,7 +736,7 @@ body div#reverse-top #spires-back-bottom {
   transform: scaleY(-1);
   height: 1900px;
   width: 100%;
-  top: 0px;
+  top: 500px;
   z-index: -1;
 }
 body div#reverse-top #moon-bottom {
