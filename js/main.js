@@ -15,7 +15,7 @@ $(document).ready( function() {
 
     $(window).scroll(function() {
         var wScroll = $(this).scrollTop();
-        // console.log(wScroll);
+        console.log(wScroll);
 
         // this handles the parallax for the first section
         if (wScroll > 600 && wScroll <=2500) {
@@ -46,7 +46,7 @@ $(document).ready( function() {
         });
 
         // this handles the parallax in the tunnel
-        if (wScroll > 2000 && wScroll <=5000) {
+        if (wScroll > 1800 && wScroll <=5000) {
             $("#tunnel-back-right").css( {
                 "transform" : "translate(0px, -" + wScroll/8 + "px) scale(-1)"
             });
@@ -68,7 +68,7 @@ $(document).ready( function() {
           }   
         
         // this will hand the reverse spires section
-        if (wScroll > 5000 && wScroll <= 6500) {
+        if (wScroll > 4400 && wScroll <= 6500) {
             $("#spires-front-bottom").css( {
                 "transform" : "translate(0px, -" + wScroll/12 + "%) scaleY(-1)"
             });

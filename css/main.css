@@ -421,6 +421,7 @@ textarea {
 
 body {
   background-color: black;
+  overflow-x: hidden;
 }
 body .parallax {
   height: 1800px;
@@ -434,6 +435,84 @@ body .parallax-layer {
 }
 body .white {
   background-color: white;
+}
+body p#text-container {
+  position: relative;
+  font-family: 'Major Mono Display', monospace;
+  color: white;
+  font-size: 160%;
+  width: 100%;
+}
+body p#text-container span {
+  position: absolute;
+}
+body p#text-container .white {
+  color: white;
+}
+body p#text-container .black {
+  color: black;
+}
+body p#text-container #w1, body p#text-container #w2, body p#text-container #w3 {
+  left: 5%;
+}
+body p#text-container #w1 {
+  background-color: red;
+  top: 1000px;
+  z-index: -3;
+}
+body p#text-container #w2 {
+  top: 1000px;
+  z-index: -2;
+}
+body p#text-container #w3 {
+  top: 1000px;
+  z-index: -1;
+}
+body p#text-container #w4, body p#text-container #w5, body p#text-container #w6 {
+  left: 90%;
+  background-color: red;
+  z-index: 10;
+  top: 1600px;
+  z-index: 10;
+}
+body p#text-container #w7, body p#text-container #w8, body p#text-container #w9 {
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+}
+body p#text-container #w7 {
+  top: 1247px;
+  transform: translateX(-20px);
+}
+body p#text-container #w8 {
+  top: 3521px;
+}
+body p#text-container #w9 {
+  top: 5795px;
+  transform: translateX(20px);
+}
+body p#text-container #w10, body p#text-container #w11, body p#text-container #w12, body p#text-container #w13 {
+  color: red;
+}
+body p#text-container #w10 {
+  left: 90%;
+  top: 4600px;
+  z-index: -1;
+}
+body p#text-container #w11 {
+  left: 90%;
+  top: 4650px;
+  z-index: -2;
+}
+body p#text-container #w12 {
+  left: 90%;
+  top: 4700px;
+  z-index: -3;
+}
+body p#text-container #w13 {
+  left: 90%;
+  top: 4750px;
+  z-index: -4;
 }
 body div#woman-container {
   width: 100px;
@@ -474,7 +553,7 @@ body #spires-back {
   height: 1900px;
   width: 100%;
   top: 750px;
-  z-index: -1;
+  z-index: -4;
 }
 body #spires-mid1 {
   background-image: url("../img/spires_mid1.png");
@@ -484,7 +563,7 @@ body #spires-mid1 {
   height: 1800px;
   width: 100%;
   top: 1000px;
-  z-index: -1;
+  z-index: -3;
 }
 body #spires-mid2 {
   background-image: url("../img/spires_mid2.png");
@@ -494,7 +573,7 @@ body #spires-mid2 {
   height: 1200px;
   width: 100%;
   top: 2000px;
-  z-index: -1;
+  z-index: -2;
 }
 body #spires-front {
   background-image: url("../img/spires_front.png");
@@ -715,7 +794,7 @@ body div#reverse-top #spires-mid2-bottom {
   height: 1200px;
   width: 100%;
   top: 2600px;
-  z-index: -1;
+  z-index: -2;
 }
 body div#reverse-top #spires-mid1-bottom {
   background-image: url("../img/spires_mid1.png");
@@ -726,7 +805,7 @@ body div#reverse-top #spires-mid1-bottom {
   height: 1800px;
   width: 100%;
   top: 1450px;
-  z-index: -1;
+  z-index: -3;
 }
 body div#reverse-top #spires-back-bottom {
   background-image: url("../img/spires_back.png");
@@ -737,7 +816,7 @@ body div#reverse-top #spires-back-bottom {
   height: 1900px;
   width: 100%;
   top: 500px;
-  z-index: -1;
+  z-index: -4;
 }
 body div#reverse-top #moon-bottom {
   background-image: url("../img/moon.png");

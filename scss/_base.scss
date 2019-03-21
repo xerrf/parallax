@@ -1,6 +1,7 @@
 body {
     // background: lightyellow;
     background-color: black;
+    overflow-x: hidden;
     .parallax {
         height: 1800px;
         overflow-x: hidden;
@@ -15,6 +16,92 @@ body {
 
     .white {
         background-color: white;
+    }
+
+    p#text-container {
+        position: relative;
+        // font-family: 'Saira Extra Condensed', Helvetica, Arial, sans-serif;
+        font-family: 'Major Mono Display', monospace;
+        color: white;
+        font-size: 160%;
+        width: 100%;
+        // overflow-x: hidden;
+        span {
+            position: absolute;
+        }
+        .white {
+            color: white;
+        }
+        .black {
+            color: black;
+        }
+        // first "what an existance"
+        #w1, #w2, #w3 {
+            left: 5%;
+        }
+        #w1 {
+            background-color: red;
+            top: 1000px;
+            z-index: -3;
+        }
+        #w2 {
+            top: 1000px;
+            z-index: -2;
+        }
+        #w3 {
+            top: 1000px;
+            z-index: -1;
+        }
+        // second "or is it"
+        #w4, #w5, #w6 {
+            left: 90%;
+            background-color: red;
+            z-index: 10;
+            top: 1600px;
+            z-index: 10;
+        }
+
+        // third "just a phase"
+        #w7, #w8, #w9 {
+            width: 100%;
+            text-align: center;
+            z-index: 1;
+        }
+        #w7 {
+            top: 1247px;
+            transform: translateX(-20px);
+        }
+        #w8 {
+            top: 3521px;
+        }
+        #w9 {
+            top: 5795px;
+            transform: translateX(20px);
+        }
+        // fourth "or maybe a cycle"
+        #w10, #w11, #w12, #w13 {
+            color: red;
+        }
+        #w10 {
+            left: 90%;
+            top: 4600px;
+            z-index: -1;
+        }
+        #w11 {
+            left: 90%;
+            top: 4650px;
+            z-index: -2;
+        }
+        #w12 {
+            left: 90%;
+            top: 4700px;
+            z-index: -3;
+        }
+        #w13 {
+            left: 90%;
+            top: 4750px;
+            z-index: -4;
+        }
     }
     
     div#woman-container {
@@ -51,7 +138,7 @@ body {
         height: 1900px;
         width: 100%;
         top: 750px;
-        z-index: -1;
+        z-index: -4;
     }
     
     #spires-mid1 {
@@ -59,7 +146,7 @@ body {
         height: 1800px;
         width: 100%;
         top: 1000px;
-        z-index: -1;
+        z-index: -3;
     }
     
     #spires-mid2 {
@@ -67,7 +154,7 @@ body {
         height: 1200px;
         width: 100%;
         top: 2000px;
-        z-index: -1;
+        z-index: -2;
     }
     
     #spires-front {
@@ -262,7 +349,7 @@ body {
             height: 1200px;
             width: 100%;
             top: 2600px;
-            z-index: -1;
+            z-index: -2;
         }
 
         #spires-mid1-bottom {
@@ -271,7 +358,7 @@ body {
             height: 1800px;
             width: 100%;
             top: 1450px;
-            z-index: -1;
+            z-index: -3;
         }
 
         #spires-back-bottom {
@@ -280,7 +367,7 @@ body {
             height: 1900px;
             width: 100%;
             top: 500px;
-            z-index: -1;
+            z-index: -4;
         }
 
         #moon-bottom {
