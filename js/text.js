@@ -21,7 +21,6 @@ $(document).ready( function() {
         }
         else if (yScroll > 1470 && yScroll <= 1570) {
             $("#w4, #w5").css( { "display" : "none" } );
-            // $("#w5").css( { "display" : "none" } );
             $("#w6").css( { "display" : "block" } );
         }
         else {
@@ -29,9 +28,9 @@ $(document).ready( function() {
         }
         
         // following is for "just a phase"
-        $("#w7").css( { "transform" : "translateY(" + yScroll*2 + "%)" } );
+        $("#w7").css( { "transform" : "translate(0px, " + yScroll*2 + "%)" } );
         // $("#w8").css( { });
-        $("#w9").css( { "transform" : "translateY(-" + yScroll*2 + "%)" } );
+        $("#w9").css( { "transform" : "translate(0px, -" + yScroll*2 + "%)" } );
 
         // following is for "or maybe a cycle"
         $("#w10").css( { "transform" : "translateY(" + yScroll/2 + "%)" } );

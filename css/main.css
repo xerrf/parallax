@@ -440,7 +440,7 @@ body p#text-container {
   position: relative;
   font-family: 'Major Mono Display', monospace;
   color: white;
-  font-size: 160%;
+  font-size: 300%;
   width: 100%;
 }
 body p#text-container span {
@@ -457,15 +457,15 @@ body p#text-container #w1, body p#text-container #w2, body p#text-container #w3 
 }
 body p#text-container #w1 {
   background-color: red;
-  top: 1000px;
+  top: 900px;
   z-index: -3;
 }
 body p#text-container #w2 {
-  top: 1000px;
+  top: 900px;
   z-index: -2;
 }
 body p#text-container #w3 {
-  top: 1000px;
+  top: 800px;
   z-index: -1;
 }
 body p#text-container #w4, body p#text-container #w5, body p#text-container #w6 {
@@ -481,37 +481,34 @@ body p#text-container #w7, body p#text-container #w8, body p#text-container #w9 
   z-index: 1;
 }
 body p#text-container #w7 {
-  top: 1247px;
+  bottom: 1000px;
   transform: translateX(-20px);
 }
 body p#text-container #w8 {
   top: 3521px;
 }
 body p#text-container #w9 {
-  top: 5795px;
+  top: 8080px;
   transform: translateX(20px);
 }
 body p#text-container #w10, body p#text-container #w11, body p#text-container #w12, body p#text-container #w13 {
+  left: 80%;
   color: red;
 }
 body p#text-container #w10 {
-  left: 90%;
-  top: 4600px;
+  top: 3700px;
   z-index: -1;
 }
 body p#text-container #w11 {
-  left: 90%;
-  top: 4650px;
+  top: 3800px;
   z-index: -2;
 }
 body p#text-container #w12 {
-  left: 90%;
-  top: 4700px;
+  top: 3900px;
   z-index: -3;
 }
 body p#text-container #w13 {
-  left: 90%;
-  top: 4750px;
+  top: 4000px;
   z-index: -4;
 }
 body div#woman-container {
@@ -666,16 +663,18 @@ body .tunnel-inside #tunnel-front-right {
   background-position: center;
   background-size: contain;
   transform: scaleX(-1);
-  height: 2406px;
-  width: 588px;
+  height: 2608px;
+  width: 1168px;
+  top: -101px;
 }
 body .tunnel-inside #tunnel-front-left {
   background-image: url("../img/tunnel_front.png");
   background-repeat: repeat-y;
   background-position: center;
   background-size: contain;
-  height: 2406px;
-  width: 588px;
+  height: 2608px;
+  width: 1168px;
+  top: -101px;
 }
 body .tunnel-inside #tunnel-mid2-right {
   background-image: url("../img/tunnel_mid2.png");

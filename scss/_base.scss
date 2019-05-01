@@ -2,6 +2,7 @@ body {
     // background: lightyellow;
     background-color: black;
     overflow-x: hidden;
+    
     .parallax {
         height: 1800px;
         overflow-x: hidden;
@@ -23,7 +24,7 @@ body {
         // font-family: 'Saira Extra Condensed', Helvetica, Arial, sans-serif;
         font-family: 'Major Mono Display', monospace;
         color: white;
-        font-size: 160%;
+        font-size: 300%;
         width: 100%;
         // overflow-x: hidden;
         span {
@@ -41,15 +42,15 @@ body {
         }
         #w1 {
             background-color: red;
-            top: 1000px;
+            top: 900px;
             z-index: -3;
         }
         #w2 {
-            top: 1000px;
+            top: 900px;
             z-index: -2;
         }
         #w3 {
-            top: 1000px;
+            top: 800px;
             z-index: -1;
         }
         // second "or is it"
@@ -68,38 +69,35 @@ body {
             z-index: 1;
         }
         #w7 {
-            top: 1247px;
+            bottom: 1000px;
             transform: translateX(-20px);
         }
         #w8 {
             top: 3521px;
         }
         #w9 {
-            top: 5795px;
+            top: 8080px;
             transform: translateX(20px);
         }
         // fourth "or maybe a cycle"
         #w10, #w11, #w12, #w13 {
+            left: 80%;
             color: red;
         }
         #w10 {
-            left: 90%;
-            top: 4600px;
+            top: 3700px;
             z-index: -1;
         }
         #w11 {
-            left: 90%;
-            top: 4650px;
+            top: 3800px;
             z-index: -2;
         }
         #w12 {
-            left: 90%;
-            top: 4700px;
+            top: 3900px;
             z-index: -3;
         }
         #w13 {
-            left: 90%;
-            top: 4750px;
+            top: 4000px;
             z-index: -4;
         }
     }
@@ -237,14 +235,16 @@ body {
         #tunnel-front-right {
             @include imageYRepeat("../img/tunnel_front.png");
             transform: scaleX(-1);
-            height: 2406px;
-            width: 588px;
+            height: 2608px;
+            width: 1168px;
+            top:-101px;
         }
 
         #tunnel-front-left {
             @include imageYRepeat("../img/tunnel_front.png");
-            height: 2406px;
-            width: 588px;
+            height: 2608px;
+            width: 1168px;
+            top:-101px;
         }
 
         #tunnel-mid2-right {

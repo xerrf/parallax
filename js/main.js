@@ -15,7 +15,7 @@ $(document).ready( function() {
 
     $(window).scroll(function() {
         var wScroll = $(this).scrollTop();
-        console.log(wScroll);
+        //console.log(wScroll);
 
         // this handles the parallax for the first section
         if (wScroll > 600 && wScroll <=2500) {
@@ -84,6 +84,14 @@ $(document).ready( function() {
             $("#stars-front-small-bottom").css( { 
                 "transform" : "translate(0px, -" + wScroll/16 + "%) scaleY(-1)"
             })
+        }
+
+        //remove "just"
+        if  (wScroll > 6000) {
+            $("#w7").css("display", "none");
+        }
+        else {
+            $("#w7").css("display", "block");
         }
     });
 });
